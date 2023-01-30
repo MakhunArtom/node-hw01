@@ -10,7 +10,6 @@ import { argv } from "node:process";
 const [, , ...args] = argv;
 
 const invokeAction = ([action, id, name, email, phone]) => {
-  console.log(action, id, name, email, phone);
   switch (action) {
     case "list":
       listContacts();
